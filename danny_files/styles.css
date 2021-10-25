@@ -31,7 +31,7 @@
     Contact
     Resume
     Features
-    Services
+    Skills
     Portfolio
     Testimonials
     Call To Action
@@ -1340,20 +1340,22 @@ section.active .section-title-1 h3 {
 * Section Title - Style 3
 */
 .section .section-title-3 p {
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 .section .section-title-3 h2 {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 700;
     position: relative;
     display: inline-block;
     margin: 10px 15px;
     text-transform: uppercase;
+    /* margin-top: 15px; */
 }
 .section .section-title-3 h2 span {
     z-index: 3;
     position: relative;
+    top: 5px;
 }
 .section .section-title-3 h2:after {
     left: -16px;
@@ -1368,20 +1370,23 @@ section.active .section-title-1 h3 {
 }
 .section .section-title-3 h3 {
     color: var(--base-1);
-    font-size: 36px;
+    font-size: 50px;
+    /* margin-top: 30px; */
 }
 /* 
 * Section Box
 */
 .section .section-box {
-    padding-right: 30px;
+    padding-right: 10px;
 }
 .section .section-box .section-box-image {
-    top: 0;
-    left: 30px;
-    right: 15px;
+    margin-top: 20px;
+    /* left: 30px; */
+    right: 30px;
     height: 100%;
+    width: 100%;
     position: absolute;
+    border-radius: 15px;
 }
 /* 
  * Section Image Box
@@ -1398,9 +1403,11 @@ section.active .section-title-1 h3 {
 }
 .section .section-circle-side.left {
     left: -30%;
+    opacity: 0.2;
 }
 .section .section-circle-side.right {
     right: -30%;
+    opacity: 0.2;
 }
 @media (max-width: 992px) {
     .section .section-box {
@@ -1734,7 +1741,7 @@ About
     margin-bottom: 30px;
 }
 .section-about-1 .feature-item p {
-    font-size: 12px;
+    font-size: 18px;
 }
 .section-about-1 .feature-item h5 {
     color: var(--base-1);
@@ -1874,6 +1881,21 @@ Resume
 /* 
 * Resume - Style 1
 */
+
+.resume-row {
+  margin: 5px;
+  width: 100%;
+}
+
+.resume-title{
+  bottom: 5px;
+  right: 5px;
+}
+
+.col-md-6 {
+  padding: 0px;
+}
+
 .section-resume-1 h4 {
     position: relative;
     padding-left: 35px;
@@ -1893,6 +1915,9 @@ Resume
     color: var(--base-1);
     font-weight: 700;
     margin-bottom: 10px;
+    margin-left: 40px;
+    /* margin-top: 10px; */
+
 }
 .section-resume-1 ul {
     list-style: none;
@@ -1916,52 +1941,64 @@ Resume
 .section-resume-1 .resume-item:before {
     top: 43px;
     left: 0;
-    width: 30px;
+    width: 40px;
     height: 1px;
     content: "";
     position: absolute;
     background-color: var(--base-1);
 }
 .section-resume-1 .resume-item p {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     padding-left: 10px;
+    margin-left: 40px;
     margin-bottom: 0;
 }
 .section-resume-1 .resume-item .resume-head {
     position: relative;
-    padding: 25px 25px 0 80px;
+    left: 50px;
+    padding: 25px 25px 0 0px;
 }
 .section-resume-1 .resume-item .resume-head h6 {
     color: var(--base-2);
+    font-size: 15px;
+    margin-left: 35px;
 }
 .section-resume-1 .resume-item .resume-head .resume-icon {
-    top: 12px;
-    left: 9px;
+    top: 25px;
+    left: -4px;
     width: 36px;
     height: 36px;
     display: block;
     text-align: center;
     position: absolute;
 }
-.section-resume-1 .resume-item .resume-head .resume-icon:before {
-    top: 25px;
-    left: 25px;
+
+#icon_jsr, #icon_rbc, #icon_xyz, #icon_doosan {
+  border-radius: 20px;
+  /* width: 90%; */
+}
+
+
+
+/* .section-resume-1 .resume-item .resume-head .resume-icon:before {
+    top: 11px;
+    left: -14px;
     z-index: 3;
     font-size: 30px;
     line-height: 36px;
     position: relative;
-}
-.section-resume-1 .resume-item .resume-head .resume-icon:after {
-    top: 15px;
-    left: 15px;
+} */
+/* .section-resume-1 .resume-item .resume-head .resume-icon:after {
+    top: 10px;
+    left: -15px;
     width: 36px;
     height: 36px;
     content: "";
     position: absolute;
     border-radius: 50%;
     background-color: var(--primary);
-}
+} */
 .section-resume-1 .resume-item .resume-head .resume-history {
     top: 30px;
     right: 0;
@@ -1973,7 +2010,7 @@ Resume
     background: var(--primary);
 }
 .section-resume-1 .resume-item .resume-body {
-    padding: 20px 28px;
+    /* padding: 20px 28px; */
 }
 .section-resume-1 .skills-item {
     position: relative;
@@ -2034,30 +2071,56 @@ Resume
 Features
 ------------------------------------*/
 /*------------------------------------
-Services
+Skills
 ------------------------------------*/
 /* 
-* Services - Style 1
+* Skills - Style 1
 */
-.section-services-1 {
+#skills .display-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-category-title {
+  /* margin-left: 200px; */
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.owl-carousel .owl-item img {
+  width: 120px;
+  height: 120px;
+}
+
+.owl-carousel .owl-item .item .inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-skills-1 {
     background-color: var(--base-0);
 }
-.section-services-1 .item {
+.section-skills-1 .item {
     overflow: hidden;
     position: relative;
     padding-top: 100%;
     border: 1px solid var(--base-1);
 }
-.section-services-1 .item p {
+.section-skills-1 .item p {
     font-size: 12px;
 }
-.section-services-1 .item h3 {
+.section-skills-1 .item h3 {
     font-size: 14px;
     font-weight: 700;
     padding-top: 55px;
     margin-bottom: 20px;
 }
-.section-services-1 .item .inner {
+.section-skills-1 .item .inner {
     top: 0;
     left: 0;
     width: 100%;
@@ -2065,7 +2128,7 @@ Services
     position: absolute;
     padding: 30px;
 }
-.section-services-1 .item .icon {
+.section-skills-1 .item .icon {
     top: 15px;
     left: 21px;
     width: 36px;
@@ -2073,7 +2136,7 @@ Services
     position: absolute;
     text-align: center;
 }
-.section-services-1 .item .icon:before {
+.section-skills-1 .item .icon:before {
     top: 12px;
     left: 3px;
     z-index: 3;
@@ -2081,13 +2144,13 @@ Services
     line-height: 36px;
     position: relative;
 }
-.section-services-1 .item:hover {
+.section-skills-1 .item:hover {
     background-color: var(--primary);
 }
-.section-services-1 .item:hover p {
+.section-skills-1 .item:hover p {
     color: var(--base-1);
 }
-.section-services-1 .owl-dots {
+.section-skills-1 .owl-dots {
     top: 15px;
     left: 0;
     right: 0;
@@ -2097,7 +2160,7 @@ Services
     text-align: center;
     margin: 0 auto;
 }
-.section-services-1 .owl-dots .owl-dot {
+.section-skills-1 .owl-dots .owl-dot {
     width: 10px;
     height: 10px;
     margin: 0 3px;
@@ -2105,11 +2168,11 @@ Services
     background: transparent;
     border: 1px solid var(--base-1);
 }
-.section-services-1 .owl-dots .owl-dot.active {
+.section-skills-1 .owl-dots .owl-dot.active {
     background-color: var(--primary) !important;
 }
 @media (max-width: 768px) {
-    .section-services-1 .item {
+    .section-skills-1 .item {
         padding-top: 250px;
     }
 }

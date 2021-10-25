@@ -128,7 +128,7 @@
 
     MIRO.Slider3 = function () {
         var rtl = $("body").attr("data-miro-rtl");
-        var slider = $(".carousel-services-1");
+        var slider = $(".carousel-skills-1");
         slider.owlCarousel({
             rtl: rtl,
             nav: false,
