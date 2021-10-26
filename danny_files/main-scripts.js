@@ -67,7 +67,7 @@
             direction: "vertical",
             verticalCentered: true,
             sectionsColor: [],
-            anchors: ["home", "about", "resume", "services", "portfolio", "testimonials", "blog", "contact"],
+            anchors: ["home", "about", "resume", "skills", "portfolio", "contact"],
             scrollingSpeed: 700,
             easing: "swing",
             loopBottom: true,
